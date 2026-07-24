@@ -30,6 +30,7 @@ from setuptools import Extension
 from setuptools import setup
 from setuptools.command.build_ext import build_ext as BaseBuildExtension
 import os
+import sys
 import shutil
 
 from setupmeta import PKG_AUTHOR
