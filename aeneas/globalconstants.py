@@ -141,7 +141,7 @@ Values: regex
 
 Example::
 
-    is_audio_file_name_regex=.*\.mp3
+    is_audio_file_name_regex=.*\\.mp3
     is_audio_file_name_regex=audio.ogg
 
 """
@@ -222,7 +222,7 @@ Values: regex
 
 Example::
 
-    is_text_file_name_regex=.*\.xhtml
+    is_text_file_name_regex=.*\\.xhtml
     is_text_file_name_regex=page.xhtml
 
 """
