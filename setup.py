@@ -257,7 +257,11 @@ class BuildExtension(BaseBuildExtension):
     def finalize_options(self):
         BaseBuildExtension.finalize_options(self)
         # Prevent numpy from thinking it is still in its setup process:
-        __builtins__.__NUMPY_SETUP__ = False
+        try:
+            # for back-compatibily
+            __builtins__.__NUMPY_SETUP__ = False
+        except:
+            pass
         import numpy
         self.include_dirs.append(numpy.get_include())
 
